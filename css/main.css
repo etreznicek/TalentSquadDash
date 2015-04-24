@@ -17,11 +17,12 @@ body, html {
 	color: #F5F5F5;
 	text-transform: uppercase;
 	float: top;
+	vertical-align: top;
 }
 #wrapper {
 	background-color: #F87620;
 	width: auto;
-	height: 900px;
+	height: 1400px;
 	margin: 0;
 }
 
@@ -29,7 +30,7 @@ body, html {
 	background-color: #F5F5F5;
 	width: 70%;
 	margin-left: 15%;
-	height: 900px;
+	height: 1400px;
 	box-shadow: 2px 2px 10px #2E2E2E;
 }
 
@@ -45,17 +46,59 @@ body, html {
 	text-align: center;
 }
 
-#yes {
+#left {
+	width: 28%;
+	height: 20px;
+	background-color: #232A31;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
 	position: absolute;
+}
+
+#middle {
+	width: 14%;
+	height: 20px;
+	background-color: #F87620;
+	display: inline;
+	margin-left: 28%;
+	padding: 0;
+	position: absolute;
+}
+
+#right {
+	width: 28%;
+	height: 20px;
+	background-color: #232A31;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	float: right;
+	position: absolute;
+	margin-left: 42%;
+}
+
+#buffer {
+	height: 20px;
+	width: 100%;
+	display: block;
+	background-color: #FFFFFF;
+}
+
+#yes {
+	position: relative;
+	float: right;
 	-ms-transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
-	margin-left: 80%;
-	margin-top: 40px;
+	margin-top: 80px;
 	font: inherit;
-	font-size: 3rem;
+	font-size: 5rem;
 	text-transform: uppercase;
 	color: white;
+	z-index: 50;
+	margin-right: -140px;
+
 }
 
 #no {
@@ -63,16 +106,20 @@ body, html {
 	-ms-transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
 	transform: rotate(-90deg);
-	margin-left: 4%;
-	margin-top: 600px;
+	margin-left: -100px;
+	margin-top: 80px;
 	font: inherit;
-	font-size: 3rem;
+	font-size: 5rem;
 	text-transform: uppercase;
 	color: white;
 }
 
 #maincontent {
 	margin-left: -30px;
+}
+
+#maincontent span {
+	float: left;
 }
 
 
